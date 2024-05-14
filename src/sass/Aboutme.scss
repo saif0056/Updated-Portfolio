@@ -1,0 +1,184 @@
+@import "mixin";
+
+.Aboutme{
+    width: auto;
+    height: auto;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color:#F5F5F7;
+    @include flex(column);
+    gap: 7.6rem;
+}
+.Aboutme .text{
+    margin-left: -8rem;
+    width: 50%;
+    height: 50%;
+    @include flex(column);
+    align-items: flex-start;
+    margin-top: 7rem;
+}
+.Aboutme .text h2{
+    text-align: left;
+    color: #505052;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom:1rem ;
+}
+.Aboutme .text h1{
+    color: #1D1D1F;
+    font-size: 4.5rem;
+    text-align: left;
+    font-weight: 660;
+    margin-top: -0.9rem;
+    margin-bottom: -0.9rem;
+}
+.Aboutme .body{
+    width: 90%;
+    height: 70vh;
+    @include flex(row);
+    gap: 2%;
+}
+.Aboutme .body .left{
+    background-color: white;
+    width: 40%;
+    height: 90%;
+    border-radius: 26px;
+    @include flex(column);
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.09);
+    /* gap: 2%; */
+}
+.Aboutme .body .left h1{
+    width: 80%;
+    text-align: left;
+    height: 20%;
+    @include flex(row);
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+.Aboutme .body .left h2{
+    width: 80%;
+    height: 60%;
+    text-align: left;
+    @include flex(row);
+    font-size: 0.9rem;
+}
+.Aboutme .body .right{
+    width: 50%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+}
+.Aboutme .body .right .box{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.09);
+    @include flex(column);
+}
+.Aboutme .body .right .box h1{
+    font-size: 2.6rem;
+    font-weight: 700;
+    background: linear-gradient(300deg,#ffee07,#ff2b6a,#ab4bff,#5ca2ff,#df1700);
+    background-size: 360% 360%;
+    animation: gradient-animation 30s ease infinite;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.Aboutme .body .right .box h2{
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+
+@media screen and (max-width:913px) {
+    .Aboutme{
+        width: auto;
+        height: auto;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color:#F5F5F7;
+        @include flex(column);
+        gap: 3rem;
+    }
+    .Aboutme .text{
+        margin-left: -1rem;
+        width: 80%;
+        height: 40%;
+        text-align: left;
+        // @include flex(column);
+        margin-top: 11rem;
+    }
+    .Aboutme .text h2{
+        text-align: left;
+        color: #505052;
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom:1rem ;
+    }
+    .Aboutme .text h1{
+        text-align: left;
+        font-size: 3.5rem;
+    }
+    .Aboutme .body{
+        width: 90%;
+        min-height: 0vh;
+        height: auto;
+        @include flex(column);
+    }
+    .Aboutme .body .left{
+        background-color: white;
+        width: 94%;
+        height: 50vh;
+        border-radius: 20px;
+        margin-bottom: 2rem;
+        /* gap: 5%; */
+    }
+    .Aboutme .body .left h1{
+        width: 85%;
+        text-align: left;
+        height: 20%;
+        @include flex(row);
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+    .Aboutme .body .left h2{
+        width: 85%;
+        height: 70%;
+        text-align: left;
+        @include flex(row);
+        font-size: 1.4rem;
+    }
+    .Aboutme .body .right{
+        width: 94%;
+        height: auto;
+        @include flex(column);
+    }
+    .Aboutme .body .right .box{
+       width: 100%;
+       height: 22vh;
+       margin-bottom: 2rem;
+    }
+    .Aboutme .body .right .box:last-child{
+        margin-bottom: 7rem;
+    }
+    .Aboutme .body .right .box h1{
+        font-size: 5.3rem;
+    }
+    .Aboutme .body .right .box h2{
+        font-size: 1.5rem;
+        opacity: 1;
+    }
+}

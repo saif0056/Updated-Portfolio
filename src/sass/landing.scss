@@ -1,0 +1,127 @@
+@import "mixin";
+.landing{
+    width: 100vw;
+    height: 100vh;
+    @include flex(column);
+    justify-content: flex-end;
+}
+.landing .head{
+    width: 100%;
+    height: 50%;
+    @include flex(column);
+}
+.landing .head .image{
+    width: 36%;
+    height: 93%;
+    @include flex(row);
+}
+.landing .head .image img{
+    width: 62%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.landing .head .name{
+    width: 100%;
+    height: 7%;
+    text-align:center ;
+    color: #505052;
+}
+.landing .head .name h2{
+    font-size: 1.2rem;
+    font-weight: 480;
+}
+.landing .tagline{
+    width: 100%;
+    /* height: 10%; */
+    @include flex(column);
+    text-align: center;
+}
+.landing .tagline h1{
+    font-size: 4.2rem;
+    font-weight: 600;
+    color: #1D1D1F;
+}
+.landing .tagline p{
+    font-size: 0.76rem;
+}
+.landing button{
+    width: 16%;
+    height: 8%;
+    border-radius: 25px;
+    color: white;
+    background-color: #0272FF;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+}
+@media screen and (max-width:120px) {
+    .landing .head .image img{ 
+width: 73%;
+height: 90%;
+    }
+}
+@media screen and (max-width:913px) {
+    .landing{
+        margin-top: -2.5rem;
+        width: 100vw;
+        height: 100vh;
+        min-width: 100vw;
+        min-height: 100vh;
+        justify-content: center;
+    }
+    .landing .head{
+        width: 100%;
+        height: 40%;
+        @include flex(column);
+        margin-bottom: -3rem;
+    }
+    .landing .head .image{
+        width: 70%;
+        height: 80%;
+    }
+    .landing .head .image img{
+        width: 100%;
+        height: 100%;
+    }
+    .landing .head .name{
+        width: 100%;
+        height: 35%;
+        text-align:center;
+        color: #505052;
+        @include flex(row);
+        margin-top: -2rem;
+    }
+    .landing .head .name h2{
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    .landing .tagline{
+        width: 100%;
+        height: 25%;
+        @include flex(column);
+        justify-content: flex-start;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .landing .tagline h1{
+        font-size: 3.5rem;
+        font-weight: 700;
+        color: #1D1D1F;
+    }
+    .landing .tagline p{
+        width: 90%;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+    }
+    .landing button{
+        width: 17rem;
+        height: 5%;
+        border-radius: 25px;
+        color: white;
+        background-color: #0272FF;
+        margin-bottom: -3rem;
+        margin-top: 1.8rem;
+        font-size: 1.5rem;
+        box-shadow: -1px 5px 8px -1px rgba(0,0,0,0.76);
+    }
+}

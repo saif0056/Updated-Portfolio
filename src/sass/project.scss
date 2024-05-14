@@ -1,0 +1,160 @@
+@import "mixin";
+.project{
+    width: auto;
+    height: auto;
+    min-width: 100vw;
+    min-height: 100vh;
+    @include flex(column);
+    gap: 7rem;
+}
+.project .text{
+    margin-left: -5rem;
+    width: 60%;
+    height: 50%;
+    @include flex(column);
+    align-items: flex-start;
+    margin-top: 7rem;
+}
+.project .text h2{
+    text-align: left;
+    color: #505052;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom:1rem ;
+}
+.project .text h1{
+    color: #1D1D1F;
+    font-size: 4.5rem;
+    text-align: left;
+    font-weight: 660;
+    margin-top: -0.9rem;
+    margin-bottom: -0.9rem;
+}
+.project .body{
+    width: 90%;
+    height: auto;
+    min-height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3%;
+}
+.project .body .box{
+    width: 100%;
+    height: 50vh;
+    background-color:#08083A;
+    border-radius: 23px;
+     transition: 0.5s ease; 
+    @include flex(row);
+    color: white;
+    font-size: 2rem;
+}
+.project .body .box:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+.project .show{
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+}
+.project .show a{
+    color: #0272FF;
+    font-size: 1.2rem;
+    transition: 1s ease;
+    text-decoration: none;
+    font-family: 'Inter' , sans-serif;
+}
+.project .show a:hover{
+transform: scale(1.06);
+cursor: pointer;
+}
+
+
+.project .body .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 23px;
+}
+
+
+
+
+
+
+@media screen and (max-width:370px){
+    .project .text h1{
+        font-size: 3rem !important;
+    }
+}
+
+.project .body .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 23px;
+}
+
+@media screen and (max-width:913px){
+    .project{
+        width: auto;
+        height: auto;
+        min-width: 100vw;
+        min-height: 100vh;
+        @include flex(column);
+        gap: 5rem;
+    }
+    .project .text{
+        margin-left: -1rem;
+        width: 85%;
+        height: 40%;
+        @include flex(column);
+        align-items: flex-start;
+        margin-top: 11rem;
+    }
+    .project .text h2{
+        text-align: left;
+        color: #505052;
+        font-size: 1.6rem;
+        font-weight: 500;
+        margin-bottom:1rem ;
+    }
+    .project .text h1{
+        font-size: 3.3rem;
+    }
+    .project .body{
+        width: 90%;
+        height: auto;
+        min-height: 0vh;
+        @include flex(column);
+    }
+    .project .body .box{
+        width: 100%;
+        height: 30vh;
+        background-color:#08083A;
+        border-radius: 23px;
+        /* transition: 0.5s ease; */
+        @include flex(row);
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .project .body .box:hover{
+        transform: scale(1.01);
+        cursor: pointer;
+    }
+    .project .show{
+        margin-top: -3rem;
+        margin-bottom: 4rem;
+    }
+    .project .show a{
+        color: #0272FF;
+        font-size: 1.5rem;
+        transition: 1s ease;
+        text-decoration: none;
+        font-family: 'Inter' , sans-serif;
+    }
+    .project .show a:hover{
+    transform: scale(1.06);
+    cursor: pointer;
+    }
+}

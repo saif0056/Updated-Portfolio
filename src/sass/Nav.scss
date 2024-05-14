@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "mixin";
+.Nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 29vw;
+    margin-right: 29vw;
+    width: 42vw;
+    height: 2.8rem;
+    position: fixed;
+    top: 2.7%; 
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    border-radius: 25px; 
+    backdrop-filter: blur(10px);
+}
+.Nav h3{
+    font-size:0.8rem;
+    color: black;
+    transition:.3s ease all ;
+    font-weight: 350;
+    font-family: "Inter",sans-serif;
+}
+.Nav h3:hover{
+    color: #0272FF;
+    transform: scale(1.23);
+    cursor: pointer;
+}
+.Nav .circle{
+    border-radius: 50%;
+    background-color: #0249B3;
+    width: 1.8rem;
+    height: 1.7rem;
+    @include flex(row);
+    color: white;
+    cursor: pointer;
+    transition:.3s ease all ;
+}
+.Nav .circle h3{
+        color: white;
+}
+.Nav .circle:hover{
+    transform: scale(1.04);
+}
+.Nav button{
+    padding: 3px 17px;
+    border-radius: 25px;
+    background-color: #0272FF;
+    color: white;
+    transition:.3s ease all ;
+}
+.Nav button:hover{
+    background-color: #0249B3;
+}
+
+@media screen and (max-width:913px) {
+    .Nav{
+        margin-left: 10vw;
+        margin-right: 10vw;
+        width: 80vw;
+        height: 2.5rem;
+        position: sticky;
+        top: 2.7%; 
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
+        z-index: 999;
+        border-radius: 25px; 
+        backdrop-filter: blur(10px);
+    }
+}

@@ -1,0 +1,334 @@
+.skills{
+    width: auto;
+    height: auto;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color:#F5F5F7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+.skills .text{
+    margin-left: -5rem;
+    width: 60%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 7rem;
+}
+.skills .text h2{
+    text-align: left;
+    color: #505052;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom:1rem ;
+}
+.skills .text h1{
+    color: #1D1D1F;
+    font-size: 4.8rem;
+    text-align: left;
+    font-weight: 660;
+    margin-top: -0.9rem;
+    margin-bottom: -0.9rem;
+}
+.skills .body{
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skills .body .tech{
+    margin-bottom: 2rem;
+    width: 83%;
+    height: 42vh;
+    background-color:  white;
+    border-radius: 23px;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.09);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+}
+.skills .body .tech h1{
+    width: 90%;
+    height: 15%;
+    font-size: 1.3rem;
+    font-weight: 550;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    display: flex;
+    opacity: 0.87;
+    align-items: center;
+}
+.skills .body .tech .boxes{
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap: 3%;
+    justify-content: center;
+    align-items: center;
+}
+.skills .body .tech .boxes .box{
+   width: 100%;
+   height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 1rem;
+}
+.skills .body .tech .boxes .box img{
+    /* width: 78%;
+    height: 68%; */
+    width: 5rem;
+height: 5rem;
+}
+.skills .body .tech .boxes .box h2{
+    font-size: 0.8rem;
+    opacity: 0.7;
+    font-weight: 450;
+    text-transform: uppercase;
+}
+.skills .body .mid{
+    width: 83%;
+    height: 42vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 2%;
+}
+.skills .body .mid .framework{
+    width: 49%;
+    height: 100%;
+    background-color: white;
+    border-radius: 23px;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.09);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5%;
+}
+.skills .body .mid .framework  h1{
+    width: 90%;
+    height: 15%;
+    font-size: 1.3rem;
+    font-weight: 550;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    opacity: 0.87;
+}
+.skills .body .mid .framework .boxes {
+    width: 90%;
+    height: 80%;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-gap: 3%;
+    justify-content: center;
+    align-items: center;
+}
+.skills .body .mid .framework .boxes .box{
+   width: 100%;
+   height: 80%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 1rem;
+}
+.skills .body .mid .framework .boxes .box img{
+    /* width: 78%;
+    height: 68%; */
+    width: 5rem;
+height: 5rem;
+}
+.skills .body .mid .framework .boxes .box h2{
+    font-size: 0.8rem;
+    opacity: 0.7;
+    font-weight: 450;
+    text-transform: uppercase;
+}
+// .skills .body .libraries{
+//     width: 49%;
+//     height: 100%;
+//     background-color: white;
+//     border-radius: 23px;
+// }
+
+
+
+
+
+
+@media screen and (max-width:913px){
+    .skills{
+        width: auto;
+        height: auto;
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color:#F5F5F7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5rem;
+    }
+    .skills .text{
+        margin-left: -1rem;
+        width: 80%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 11rem;
+    }
+    .skills .text h2{
+        text-align: left;
+        color: #505052;
+        font-size: 1.7rem;
+        font-weight: 500;
+        margin-bottom:1rem ;
+    }
+    .skills .text h1{
+        font-size: 3rem;
+    }
+    .skills .body{
+        width: 85%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .skills .body .tech{
+        margin-bottom: 2rem;
+        width: 100%;
+        height: 35vh;
+        background-color:  white;
+        border-radius: 23px;
+        flex-direction: column;
+        box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.12);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5%;
+    }
+    .skills .body .tech h1{
+        width: 80%;
+        height: 15%;
+        font-size: 1.7rem;
+        font-weight: 660;
+        text-transform: capitalize;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .skills .body .tech .boxes{
+        width: 90%;
+        height: 85%;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        grid-gap: 2%;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills .body .tech .boxes .box{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       gap: 0.7rem;
+    }
+    .skills .body .tech .boxes .box img{
+        width: 5.3rem;
+    height: 5.3rem;
+    }
+    .skills .body .tech .boxes .box h2{
+        font-size: 0.9rem;
+        opacity: 1;
+        font-weight: 550;
+        text-transform: uppercase;
+    }
+
+    .skills .body .mid{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 4rem;
+        gap: 4%;
+    }
+    .skills .body .mid .framework{
+        width: 100%;
+        height: 20vh;
+        background-color: white;
+        border-radius: 23px;
+        flex-direction: column;
+        box-shadow: 0px 0px 5px -1px rgba(0,0,0,0.09);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5%;
+        margin-bottom: 2rem;
+    }
+    .skills .body .mid .framework  h1{
+        width: 80%;
+        height: 15%;
+        font-size: 1.7rem;
+        font-weight: 660;
+        text-transform: capitalize;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    .skills .body .mid .framework .boxes{
+        width: 90%;
+        height: 85%;
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr ;
+        grid-gap: 3%;
+        justify-content: center;
+        align-items: center;
+    }
+    .skills .body .mid .framework .boxes .box{
+       width: 100%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       gap: 0.7rem;
+    }
+    .skills .body .mid .framework .boxes .box img{
+        /* width: 78%;
+        height: 68%; */
+        width: 5.3rem;
+    height: 5.3rem;
+    }
+    .skills .body .mid .framework .boxes .box h2{
+        font-size: 0.9rem;
+        opacity: 1;
+        font-weight: 550;
+        text-transform: uppercase;
+    }
+}
